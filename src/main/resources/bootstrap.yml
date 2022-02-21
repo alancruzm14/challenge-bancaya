@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: challenge
+  datasource:
+    url: jdbc:mysql://localhost:3308/ChallengeDb?useSSL=false&serverTimezone=UTC
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties: 
+      hibernate: 
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+
+server:  port: 8080
+ 
+pokemon:
+  api: https://pokeapi.co/api/v2/pokemon/
+    
